@@ -13,6 +13,7 @@ jobs:
         shell: python
   run-powershell-command:
     runs-on: windows-latest
+    needs: ["run-shell-command"]
     steps:
       - name: Powershellで文字をecho
         run: echo "Windows Powershellで Hellow!!! (*´ω`）"
