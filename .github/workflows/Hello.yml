@@ -11,4 +11,8 @@ jobs:
       - name: Pythonで文字をprint
         run: print("GitHub Actionで Pythonで Hello!!!")
         shell: python
-        
+  run-powershell-command:
+    runs-on: windows-latest
+    steps:
+      - name: Powershellで文字をecho
+        run: echo "Windows Powershellで Hellow!!! (*´ω`）"
