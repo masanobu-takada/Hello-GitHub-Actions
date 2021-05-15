@@ -1,0 +1,10 @@
+name: GitHubワークフローでHello Shell Commands
+
+on: [push]
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: 文字をecho
+        run: echo "GitHub Actionから Hello!!"
