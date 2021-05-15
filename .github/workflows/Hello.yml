@@ -8,3 +8,7 @@ jobs:
     steps: 
       - name: 文字をecho
         run: echo "GitHub Actionから Hello!!"
+      - name: Pythonで文字をprint
+        run: print("GitHub Actionで Pythonで Hello!!!")
+        shell: python
+        
