@@ -1,0 +1,13 @@
+name: JavaScript ActionでHello
+
+on: [push]
+
+jobs:
+  run-javascript-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello Name
+        uses: actions/hello-world-javascript-action@v1
+        with: 
+          who-to-greet: Sysco-tc
+
