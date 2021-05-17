@@ -1,0 +1,12 @@
+name: Checkout Action Hello
+
+on: [push]
+
+jobs:
+  run-checkout-action:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Show Text
+        run: less Pol_AA.txt
